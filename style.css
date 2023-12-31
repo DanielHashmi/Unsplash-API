@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 63.5%;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #537276, #790c7e24);
+}
+
+div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav div h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+nav div .cam {
+    font-size: 5rem;
+    color: orange;
+}
+
+nav div input {
+    border: none;
+    touch-action: none;
+    outline: none;
+    width: 35rem;
+    height: 3.2rem;
+    border-radius: 20px;
+    padding: 14px;
+    font-size: 2rem;
+}
+
+nav div .search {
+    position: relative;
+    right: 4rem;
+    font-size: 2rem;
+}
+
+nav div input:hover {
+    box-shadow: 0 0 5px -2px orange;
+}
+
+nav div .search:hover {
+    font-size: 2.1rem;
+    color: gray;
+}
+
+hr {
+    border: 0;
+    background-color: rgb(155, 155, 155);
+    height: 1px;
+}
+
+.wrapper .img {
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 3rem 1rem;
+    gap: 3rem;
+    background: linear-gradient(45deg, #122538, #790c7e24)
+}
+
+footer {
+    background-color: rgb(59, 58, 58);
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+
+.imgSec .bigImg {
+    position: absolute;
+    top: 20rem;
+    box-shadow: 0 0 168px 46px;
+    display: none;
+}
+
+.imgSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1150px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:840px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        flex-direction: column;
+        height: 15rem;
+    }
+
+    nav div input {
+        margin-left: 3rem;
+    }
+
+    .imgSec .bigImg {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media(max-width:500px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav div input {
+        width: 28rem;
+        margin-left: 3rem;
+    }
+
+    nav div h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:300px) {
+    nav div h1 {
+        font-size: 2rem;
+    }
+
+    nav div input {
+        width: 24rem;
+    }
+}
