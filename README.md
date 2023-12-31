@@ -11,5 +11,5 @@ This repository contains a simple and efficient JavaScript application that inte
 ## Technologies Used
 - **JavaScript**: The application is built using JavaScript, making it lightweight and efficient.
 - **Unsplash API**: The application uses the Unsplash API to fetch images based on user's search keywords.
-- 
+  
 Feel free to explore the repository, raise issues, and contribute. Enjoy browsing images!
